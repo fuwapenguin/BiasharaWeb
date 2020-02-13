@@ -19,14 +19,17 @@ class CreateUsersTable extends Migration
             $table->string('middle_name')->default('');
             $table->string('last_name');
             $table->uuid('user_type_code')->default('0');
-            $table->uuid('company_id')->nullable();
+            $table->primary('company_id')->nullable();
             $table->uuid('country_id')->nullable();
             $table->string('email')->unique();
             $table->string('phone_number')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->foreign('image_id');
             $table->rememberToken();
-            $table->timestamps();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
+
         });
     }
 

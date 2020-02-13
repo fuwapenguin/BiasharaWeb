@@ -22,7 +22,7 @@ class CreateCountriesTable extends Migration
             $table->string('Iso3');
             $table->string('Unicode');
             $table->string('Dial');
-            $table->string('Currency');
+            $table->foreign('currency_id');
             $table->string('Capital');
             $table->string('Continent');
             $table->timestamps();

@@ -14,10 +14,11 @@ class CreateUserTypeTable extends Migration
     public function up()
     {
         Schema::create('user_type', function (Blueprint $table) {
-            $table->increments('id');
+            $table->foreign('id');
             $table->mediumInteger('code')->unique();
             $table->string('name')->unique();
             $table->string('description');
+            $table->timestamps();
         });
     }
 

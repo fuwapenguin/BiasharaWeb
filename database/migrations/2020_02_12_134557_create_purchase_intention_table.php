@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePurchaseIntentionTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('purchase_intention', function (Blueprint $table) {
+            $table->uuid('purchase_intention_id')->primary();
+            $table->string('purchase_intention_name');
+            $table->string('purchase_intention_description');
+            $table->timestamp('purchase_intention_created_at');
+            $table->timestamp('purchase_intention_updated_at');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('purchase_intention');
+    }
+}
