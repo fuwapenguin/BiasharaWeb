@@ -19,16 +19,17 @@ class CreateUsersTable extends Migration
             $table->string('middle_name')->default('');
             $table->string('last_name');
             $table->uuid('user_type_code')->default('0');
-            $table->primary('company_id')->nullable();
+            $table->string('company_id')->primary();
             $table->uuid('country_id')->nullable();
             $table->string('email')->unique();
             $table->string('phone_number')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->timestamp('email_verified_at');
             $table->string('password');
-            $table->foreign('image_id');
+            $table->unsignedBigInteger('image_id')->unsigned();
+            $table->foreign('image_id')->references('image_id')->on('images');
             $table->rememberToken();
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
 
         });
     }
