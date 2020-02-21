@@ -14,11 +14,11 @@ class CreatePurchaseIntentionTable extends Migration
     public function up()
     {
         Schema::create('purchase_intention', function (Blueprint $table) {
-            $table->uuid('purchase_intention_id')->primary();
+            $table->bigIncrements('purchase_intention_id');
             $table->string('purchase_intention_name');
             $table->string('purchase_intention_description');
-            $table->timestamp('purchase_intention_created_at');
-            $table->timestamp('purchase_intention_updated_at');
+            $table->dateTime('purchase_intention_created_at');
+            $table->dateTime('purchase_intention_updated_at');
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePaymentTermsCatagoryTable extends Migration
+class CreatePaymentTermsCategoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreatePaymentTermsCatagoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('payment_terms_catagory', function (Blueprint $table) {
-            $table->uuid('payment_terms_category_id')->primary();
+        Schema::create('payment_terms_category', function (Blueprint $table) {
+            $table->bigIncrements('payment_terms_category_id');
             $table->string('payment_terms_category_name');
             $table->string('payment_terms_category_description');
-            $table->timestamp('payment_terms_category_created_at');
-            $table->timestamp('payment_terms_category_updated_at');
+            $table->dateTime('payment_terms_category_created_at');
+            $table->dateTime('payment_terms_category_updated_at');
         });
     }
 
@@ -29,6 +29,6 @@ class CreatePaymentTermsCatagoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payment_terms_catagory');
+        Schema::dropIfExists('payment_terms_category');
     }
 }

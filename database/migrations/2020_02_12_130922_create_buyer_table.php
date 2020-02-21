@@ -14,11 +14,11 @@ class CreateBuyerTable extends Migration
     public function up()
     {
         Schema::create('buyer', function (Blueprint $table) {
-            $table->primary('buyer_id');
+            $table->bigIncrements('buyer_id');
             $table->string('buyer_name');
             $table->string('buyer_description');
-            $table->timestamp('buyer_created_at');
-            $table->timestamp('buyer_updated_at');
+            $table->dateTime('buyer_created_at');
+            $table->dateTime('buyer_updated_at');
         });
     }
 

@@ -14,11 +14,11 @@ class CreateCategoryTable extends Migration
     public function up()
     {
         Schema::create('category', function (Blueprint $table) {
-            $table->uuid('category_id')->primary();
+            $table->bigIncrements('category_id');
             $table->string('category_name');
             $table->string('category_description');
-            $table->timestamp('category_created_at');
-            $table->timestamp('category_updated_at');
+            $table->dateTime('category_created_at');
+            $table->dateTime('category_updated_at');
         });
     }
 

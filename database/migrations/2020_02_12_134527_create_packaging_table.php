@@ -14,11 +14,11 @@ class CreatePackagingTable extends Migration
     public function up()
     {
         Schema::create('packaging', function (Blueprint $table) {
-            $table->uuid('packaging_id')->primary();
+            $table->bigIncrements('packaging_id');
             $table->string('packaging_name');
             $table->string('packaging_code');
-            $table->timestamp('packaging_created_at');
-            $table->timestamp('packaging_updated_at');
+            $table->dateTime('packaging_created_at');
+            $table->dateTime('packaging_updated_at');
         });
     }
 
