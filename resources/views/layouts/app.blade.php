@@ -103,6 +103,7 @@
         }
 
 
+
         /* RESPONSIVE CSS
         -------------------------------------------------- */
 
@@ -204,6 +205,7 @@
     $(function() {
         $( ".datepicker" ).datepicker({
             changeMonth: true,
+            minDate: new Date(1990, 1 - 1, 1),
             yearRange: "c-50:c+50",
             showOptions: { direction: "down" },
             changeYear: true

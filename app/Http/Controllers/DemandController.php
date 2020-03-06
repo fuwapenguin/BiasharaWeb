@@ -30,10 +30,14 @@ class DemandController extends Controller
     	$deliveries = DB::table('delivery_terms')->get()->pluck('delivery_terms_name',	'delivery_terms_id');
 	    $payments = DB::table('payment_terms_category')->get()->pluck('payment_terms_category_name',	'payment_terms_category_id');
 	    $categories = DB::table('category')->get()->pluck('category_name',	'category_id');
+	    $purchase = DB::table('purchase_intention')->get()->pluck('purchase_intention_name',	'purchase_intention_id');
+	    $packaging = DB::table('packaging')->get()->pluck('packaging_name',	'packaging_id');
 	    return view('demand.create')
 		    ->with('deliveries', $deliveries)
 		    ->with('payments', $payments)
-		    ->with('categories', $categories);
+		    ->with('categories', $categories)
+		    ->with('purchase', $purchase)
+		    ->with('packaging', $packaging);
     }
 
     /**
