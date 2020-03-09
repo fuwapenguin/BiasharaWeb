@@ -15,6 +15,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+<<<<<<< HEAD
+=======
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+>>>>>>> master
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -100,6 +106,10 @@
         }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
         /* RESPONSIVE CSS
         -------------------------------------------------- */
 
@@ -195,5 +205,21 @@
 <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
+<<<<<<< HEAD
+=======
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( ".datepicker" ).datepicker({
+            changeMonth: true,
+            minDate: new Date(1990, 1 - 1, 1),
+            yearRange: "c-50:c+50",
+            showOptions: { direction: "down" },
+            changeYear: true
+        });
+    });
+</script>
+>>>>>>> master
 </body>
 </html>
