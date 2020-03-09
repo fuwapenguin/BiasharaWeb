@@ -14,7 +14,8 @@ class CreateQuantityTable extends Migration
     public function up()
     {
         Schema::create('quantity', function (Blueprint $table) {
-            $table->bigIncrements('quantity_id');
+            $table->uuid('quantity_id');
+            $table->primary('quantity_id');
             $table->string('quantity_name');
             $table->string('quantity_amount');
             $table->dateTime('quantity_created_at');

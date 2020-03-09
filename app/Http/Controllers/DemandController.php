@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Demand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Webpatser\Uuid\Uuid;
 
 class DemandController extends Controller
 {
@@ -48,7 +49,8 @@ class DemandController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $uuid = Uuid::generate(1);
+        dd($uuid);
     }
 
     /**

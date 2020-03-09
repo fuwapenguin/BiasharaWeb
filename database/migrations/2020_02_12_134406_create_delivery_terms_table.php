@@ -14,7 +14,8 @@ class CreateDeliveryTermsTable extends Migration
     public function up()
     {
         Schema::create('delivery_terms', function (Blueprint $table) {
-            $table->bigIncrements('delivery_terms_id');
+            $table->uuid('delivery_terms_id');
+            $table->primary('delivery_terms_id');
             $table->string('delivery_terms_name');
             $table->string('delivery_terms_description');
             $table->dateTime('delivery_terms_created_at');

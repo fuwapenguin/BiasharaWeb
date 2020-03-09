@@ -14,7 +14,8 @@ class CreatePackagingTable extends Migration
     public function up()
     {
         Schema::create('packaging', function (Blueprint $table) {
-            $table->bigIncrements('packaging_id');
+            $table->uuid('packaging_id');
+            $table->primary('packaging_id');
             $table->string('packaging_name');
             $table->string('packaging_code');
             $table->dateTime('packaging_created_at');

@@ -14,7 +14,8 @@ class CreatePaymentTermsCategoryTable extends Migration
     public function up()
     {
         Schema::create('payment_terms_category', function (Blueprint $table) {
-            $table->bigIncrements('payment_terms_category_id');
+            $table->uuid('payment_terms_category_id');
+            $table->primary('payment_terms_category_id');
             $table->string('payment_terms_category_name');
             $table->string('payment_terms_category_description');
             $table->dateTime('payment_terms_category_created_at');

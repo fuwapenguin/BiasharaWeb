@@ -16,13 +16,14 @@ class CreateCountriesTable extends Migration
     public function up()
     {
         Schema::create('countries', function (Blueprint $table) {
-            $table->bigIncrements('country_id');
+            $table->uuid('country_id');
+            $table->primary('country_id');
             $table->string('Name');
             $table->string('Iso2');
             $table->string('Iso3');
             $table->string('Unicode');
             $table->string('Dial');
-            $table->unsignedBigInteger('currency_id')->unsigned();
+            $table->uuid('currency_id');
             $table->foreign('currency_id')->references('currency_id')->on('currency');
             $table->string('Capital');
             $table->string('Continent');

@@ -14,12 +14,13 @@ class CreateCompanyTable extends Migration
     public function up()
     {
         Schema::create('company', function (Blueprint $table) {
-            $table->bigIncrements('company_id');
+            $table->uuid('company_id');
+            $table->primary('company_id');
             $table->string('company_name');
             $table->string('company_description');
             $table->dateTime('company_created_at');
             $table->dateTime('company_updated_at');
-            $table->unsignedBigInteger('country_id');
+            $table->uuid('country_id');
             $table->foreign('country_id')->references('country_id')->on('countries');
             $table->string('established');
             $table->string('company_number');
