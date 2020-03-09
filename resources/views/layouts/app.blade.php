@@ -16,6 +16,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+>>>>>>> master
 =======
     <!-- Datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
@@ -107,6 +113,10 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 =======
 
 >>>>>>> master
@@ -206,7 +216,10 @@
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script>
@@ -220,6 +233,9 @@
         });
     });
 </script>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
 </body>
 </html>
