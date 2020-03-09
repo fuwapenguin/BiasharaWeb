@@ -13,48 +13,48 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" id="ProductName" placeholder="Product Name">
+                    <input name="product_name" type="text" class="form-control" id="product_name_id" placeholder="Product Name">
                     <br>
-                    <select name="category_id" class="form-control" id="category_id" required>
+                    <select name="category" class="form-control" id="category_id" required>
                         @foreach($categories as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
                     <br>
-                    <input type="text" class="form-control" id="Site" placeholder="Site">
+                    <input name="site" type="text" class="form-control" id="site_id" placeholder="Site">
                     <br>
-                    <input type="text" class="form-control" id="Size" placeholder="Size">
+                    <input name="size" type="text" class="form-control" id="size_id" placeholder="Size">
                     <br>
-                    <input type="text" class="form-control" id="Pricing" placeholder="Pricing">
+                    <input name="pricing" type="text" class="form-control" id="pricing_id" placeholder="Pricing">
                     <br>
-                    <input type="text" class="form-control" id="Availability" placeholder="Availability">
+                    <input name="availability" type="text" class="form-control" id="availability_id" placeholder="Availability">
                     <br>
                     <div class="form-inline">
-                        <input type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="Quantity" placeholder="Quantity">
-                        <input type="text" style="width: 49%;" class="form-control" id="TrialQuantity" placeholder="Trial quantity">
+                        <input name="quantity" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="quantity_id" placeholder="Quantity">
+                        <input name="trial_quantity" type="text" style="width: 49%;" class="form-control" id="trial_quantity_id" placeholder="Trial quantity">
                     </div>
                     <br>
                     <label>Time table</label>
                     <br>
                     <div class="form-inline">
-                        <input id="StartDate" class="datepicker" style="width: 49% ; margin-right: 7px;" placeholder="Start date">
-                        <input id="EndDate" class="datepicker" style="width: 49%;" placeholder="End date">
+                        <input name="start_date" id="start_date_id" class="datepicker" style="width: 49% ; margin-right: 7px;" placeholder="Start date">
+                        <input name="end_date" id="end_date_id" class="datepicker" style="width: 49%;" placeholder="End date">
                     </div>
                     <br>
-                    <input type="text" class="form-control" id="productCapacity" placeholder="Product capacity">
+                    <input name="product_capacity" type="text" class="form-control" id="product_capacity_id" placeholder="Product capacity">
                     <br>
                     <div class="form-inline">
-                        <input type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="Pesticides" placeholder="Pesticides">
-                        <input type="text" style="width: 49%;" class="form-control" id="Fertilizers" placeholder="Fertilizers">
+                        <input name="pesticides" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="pesticides_id" placeholder="Pesticides">
+                        <input name="fertilizers" type="text" style="width: 49%;" class="form-control" id="fertilizers_id" placeholder="Fertilizers">
                     </div>
                     <br>
                     <div class="form-inline">
-                        <select name="delivery_terms_id" style="width: 49%; margin-right: 7px;" class="form-control" id="DeliveryTerms" required>
+                        <select name="delivery_terms" style="width: 49%; margin-right: 7px;" class="form-control" id="delivery_terms_id" required>
                             @foreach($deliveries as $id => $display)
                                 <option value="{{ $id }}">{{ $display }}</option>
                             @endforeach
                         </select>
-                        <select name="payment_terms_category_id" style="width: 49%;" class="form-control" id="PaymentTerms" required>
+                        <select name="payment_terms_category" style="width: 49%;" class="form-control" id="payment_terms_category_id" required>
                             @foreach($payments as $id => $display)
                                 <option value="{{ $id }}">{{ $display }}</option>
                             @endforeach
@@ -62,8 +62,8 @@
                     </div>
                     <br>
                     <div class="form-inline">
-                        <textarea id="" style="width: 49%; height: 110px; margin-right: 7px;" class="form-control" placeholder="Delivery details"></textarea>
-                        <textarea id="" style="width: 49%; height: 110px;" class="form-control" placeholder="Payment details"></textarea>
+                        <textarea name="delivery_details" id="delivery_details_id" style="width: 49%; height: 110px; margin-right: 7px;" class="form-control" placeholder="Delivery details"></textarea>
+                        <textarea name="payment_details" id="payment_details_id" style="width: 49%; height: 110px;" class="form-control" placeholder="Payment details"></textarea>
                     </div>
                  </div>
                 <div class="col">
@@ -108,27 +108,27 @@
                     </div>
                 </div>
                 <div class="col">
-                    <select name="purchase_intention_id" class="form-control" id="purchase_intention_id" required>
+                    <select name="purchase_intention" class="form-control" id="purchase_intention_id" required>
                         @foreach($purchase as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
                     <br>
-                    <select name="packaging_id" class="form-control" id="packaging_id" required>
+                    <select name="packaging" class="form-control" id="packaging_id" required>
                         @foreach($packaging as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
                     <br>
-                    <input type="text" class="form-control" id="Distribution" placeholder="Distribution">
+                    <input name="distribution" id="distribution_id" type="text" class="form-control"  placeholder="Distribution">
                     <br>
-                    <input type="text" class="form-control" id="Sorting" placeholder="Sorting">
+                    <input name="sorting" id="sorting_id" type="text" class="form-control"  placeholder="Sorting">
                     <br>
-                    <textarea id="Certifications" style="height: 173px;" class="form-control" placeholder="Certifications"></textarea>
+                    <textarea name="certifications" id="certifications_id" style="height: 173px;" class="form-control" placeholder="Certifications"></textarea>
                     <br>
-                    <textarea id="Variety" style="height: 173px;" class="form-control" placeholder="Variety"></textarea>
+                    <textarea name="variety" id="variety_id" style="height: 173px;" class="form-control" placeholder="Variety"></textarea>
                     <br>
-                    <textarea id="Curing" style="height: 173px;" class="form-control" placeholder="Curing"></textarea>
+                    <textarea name="curing" id="curing_id" style="height: 173px;" class="form-control" placeholder="Curing"></textarea>
                 </div>
             </div>
             <br>
