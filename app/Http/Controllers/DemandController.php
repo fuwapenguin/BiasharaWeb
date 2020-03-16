@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Demand;
+use Exception;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\View\View;
 use Webpatser\Uuid\Uuid;
 
 class DemandController extends Controller
@@ -12,7 +16,7 @@ class DemandController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Factory|View
      */
     public function index()
     {
@@ -24,7 +28,7 @@ class DemandController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Factory|View
      */
     public function create()
     {
@@ -44,8 +48,9 @@ class DemandController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return void
+     * @throws Exception
      */
     public function store(Request $request)
     {
@@ -56,8 +61,8 @@ class DemandController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Demand  $demand
-     * @return \Illuminate\Http\Response
+     * @param Demand $demand
+     * @return void
      */
     public function show(Demand $demand)
     {
@@ -67,8 +72,8 @@ class DemandController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Demand  $demand
-     * @return \Illuminate\Http\Response
+     * @param Demand $demand
+     * @return void
      */
     public function edit(Demand $demand)
     {
@@ -78,9 +83,9 @@ class DemandController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Demand  $demand
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Demand $demand
+     * @return void
      */
     public function update(Request $request, Demand $demand)
     {
@@ -90,8 +95,8 @@ class DemandController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Demand  $demand
-     * @return \Illuminate\Http\Response
+     * @param Demand $demand
+     * @return void
      */
     public function destroy(Demand $demand)
     {

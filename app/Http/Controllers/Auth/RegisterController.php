@@ -6,9 +6,11 @@ use App\Countries;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Exception;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Webpatser\Uuid\Uuid;
 
 class RegisterController extends Controller
 {
@@ -62,8 +64,9 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
-     * @return \App\User
+     * @param array $data
+     * @return User
+     * @throws Exception
      */
     protected function create(array $data)
     {
@@ -72,6 +75,7 @@ class RegisterController extends Controller
         }
 
         return User::create([
+            'user_id' => Uuid::generate(),
             'first_name' => $data['first_name'],
             'middle_name' => $data['middle_name'],
             'last_name' => $data['last_name'],

@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Webpatser\Uuid\Uuid;
 
 class CreateCompanyTable extends Migration
 {
@@ -14,7 +15,7 @@ class CreateCompanyTable extends Migration
     public function up()
     {
         Schema::create('company', function (Blueprint $table) {
-            $table->uuid('company_id');
+            $table->uuid('company_id')->default(Uuid::generate());
             $table->primary('company_id');
             $table->string('company_name');
             $table->string('company_description');
