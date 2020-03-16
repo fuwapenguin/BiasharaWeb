@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "biashara-271309",
+  "private_key_id": "44f3fc73f63b24fd87abc7e0aa3156e825dddcf7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCiJfdCzR2BAuhc\nJMAifNE9rkV8r0D2ypg0Q+PRMJeeZKbKdPvhtcRik9xqUsBYIQzp4NKfkBTNy7EG\nRi2LO9T3dGz3hf/uWb+D9bRi1hVGzfWHjMxfhCTnr8ItSCCwQNkn5TFGdJ8M9XTP\n+0Gt7vs0H9a/+0a9AqXOjmd/M1AjCKCfOT7JMbMG6C2+BNdKostP8hnDwY0vNL+s\nAhnt76TxNNSZwwi7WxWagqjkkueWTytXeowwVqoAiSAb4BkUmMt6QdKCHpUjbuzs\nKqAqkxnSBDuXajZm92TW19xiz49n307LsADVyghEq+VMfAV/68tagb536HVeG305\nAIWOak3bAgMBAAECggEATuloLM/zEGKwX4uZIA+bq0eBVL1bwd919FWn7RoXZ8P3\nMid9n+qckRcBmZL9PcaT6Mx75KCzpzX+yJ1ls9GiAu3bzBigJcjyvg9ZQxKKF0PL\nvrSkj8WZSlIMj4n/MpfUtyhA81d1QlLAjylp3PKluUfXdOYeloTP2bcPImYAFZPp\nSm9Q6bOni+An5ztMw2Z3W2Huj7ofFWMNitBicNxWKL4wb1xarIgFsvbqTYQyu5kC\nnocGP18czfnOP0q/g5hObTirUAA70LZoGNtNYRt3AA+siWmJ5aKyqQ+pkRU8KI8f\nfgTjhwkR11j4OjvAyt9Zt7NGo7cqCQz7EVFlvGv8hQKBgQDjYJm08o8kUF7K2jaz\nlI0lL41uLEyautI04n0RFJ0Kz0b59l//kI/HaryjG4B7KKH9St9vPoWrWAoTCRyt\nzOcdOtyVlelprJSlQLTRIV/cMgodYJd5I4SzumT/BBU46E5d00HgRo8RuBukAWkB\nqx0GegAASF5mJCJSAQ13mSQKfQKBgQC2j0/3HlnT5JMoAS85PqIGkt9Stp00kIQ+\n7h70u43mw7lHgDBBkOa2xHuegWdXbcdkfxcXc4mEh+Vby8oWKzCExlHMMI16eBtl\navC2SHZDzAt/oGorBygPNhc0nJfrIUXmx5om5qhkkYZ+iJXRaHUTnb0drjwMW/ov\n7oP+9kzRNwKBgC/Q4sIQuFV0qVqTZSmCteP6Cg3/NuTbINWKQ67R3OynBlAOpcWC\nyxmuspjCcdR0iQxRMIeeaFHOI+A47FUIYBnfhP/YFMvqRSAzaVMJZ7VQuJvQ8knB\nVGjPa+nNHAFpqQFGKfZWIEQjqXxl54U4TNRN1643idKFCsqf+gsKo2+pAoGAaZlq\nYwJuaXAdYxWUUGOXa4AHqBuzwZUauiAZTe0zftmWUfKndzWvDueGrkAiG+OHY+1T\n2R/e2weUt02hPsOK1DK3XAp1u/K/viFmzboKltrvh8qtvufr1yitsaQnCD595alt\n1LS1kT7Qcl7lcnUey9MBcqq3V1rY1GL+fTvRYW8CgYEAkq3yw6JTdjUs+rwjIwUz\nVYKl4D3Y2hDp6iBMeveD7SJzO64SLHK0h6lkiFz7kM3OWd6h/HVn3BbPv/1x7PrH\nQbObxdHd7ikr7AvZ1we9iQ5poKg222t8YOn6dGs9guRTWPwL1Jkub4hy8xJrKeT5\nWW7VN/ymO/DGfAHEX1EN9b4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "biasharaacc@biashara-271309.iam.gserviceaccount.com",
+  "client_id": "103569609604517516748",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/biasharaacc%40biashara-271309.iam.gserviceaccount.com"
+}
