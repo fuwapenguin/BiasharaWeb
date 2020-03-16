@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efca4f5-175b-4b82-bc9e-4929c21d38ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +171,7 @@
       <workItem from="1580378359171" duration="615000" />
       <workItem from="1584351455400" duration="215000" />
       <workItem from="1584351682142" duration="60000" />
-      <workItem from="1584351884193" duration="1928000" />
+      <workItem from="1584351884193" duration="2039000" />
     </task>
     <servers />
   </component>
