@@ -54,8 +54,36 @@ class DemandController extends Controller
      */
     public function store(Request $request)
     {
-        $uuid = Uuid::generate(1);
-        dd($uuid);
+        dd($request->all());
+        /**  DB::table('demand')->insert([
+        'demand_id' => Uuid::generate(),
+        'demand_name' => $request->input('product_name'),
+        'category_id' => $request->input('category'),
+        'demand_created_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
+        'demand_updated_at' => Carbon::now()->format( 'Y-m-d H:i:s' ),
+        'demand_site' => $request->input('site'),
+        'demand_size' => $request->input('size'),
+        'demand_pricing' => $request->input('pricing'),
+        'demand_availability' => $request->input('availability'),
+        'quantity' => $request->input('quantity'),
+        'buyer_id' => "1",
+        'demand_time_start' => $request->input('start_date'),
+        'demand_time_end' => $request->input('end_date'),
+        'demand_production_capacity' => $request->input('product_capacity'),
+        'pesticides_id' => $request->input('pesticides'),
+        'fertilizers_id' => $request->input('fertilizers'),
+        'delivery_terms_id' => $request->input('delivery_terms'),
+        'demand_delivery_details' => $request->input('delivery_details'),
+        'payment_terms_category_id' => $request->input('payment_terms_category'),
+        'demand_payment_details' => $request->input('payment_details'),
+        'purchase_intention_id' => $request->input('purchase_intention'),
+        'packaging_id' => $request->input('packaging'),
+        'demand_distribution' => $request->input('distribution'),
+        'demand_sorting' => $request->input('sorting'),
+        'demand_variety' => $request->input('variety'),
+        'demand_cured' => $request->input('cured')
+        ]);
+        return redirect()->action('DemandController@create');*/
     }
 
     /**

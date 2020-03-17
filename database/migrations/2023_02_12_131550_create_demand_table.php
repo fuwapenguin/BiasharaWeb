@@ -26,7 +26,7 @@ class CreateDemandTable extends Migration
             $table->string('demand_pricing');
             $table->string('demand_availability');
             $table->uuid('quantity_id');
-            $table->foreign('quantity_id')->references('quantity_id')->on('quantity');
+            //$table->foreign('quantity_id')->references('quantity_id')->on('quantity');
             $table->uuid('buyer_id');
             $table->foreign('buyer_id')->references('buyer_id')->on('buyer');
             $table->string('demand_time_start');

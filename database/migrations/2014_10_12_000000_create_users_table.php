@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->dateTime('email_verified_at')->default(null);
             $table->string('password');
             $table->uuid('image_id')->default(Uuid::generate());
-            $table->foreign('image_id')->references('image_id')->on('images');
+            //$table->foreign('image_id')->references('image_id')->on('images');
             $table->rememberToken();
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
