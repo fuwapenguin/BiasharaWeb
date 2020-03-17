@@ -44,6 +44,7 @@ class GoogleVisionController extends Controller
             } else {
                 echo('No label found' . PHP_EOL);
             }
+            echo("</br>");
 
             $response = $imageAnnotator->webDetection($image);
             $web = $response->getWebDetection();
@@ -56,6 +57,7 @@ class GoogleVisionController extends Controller
                 printf('Best guess label: %s' . PHP_EOL, $label->getLabel());
                 echo("</br>");
             }
+            echo("</br>");
 
             printf('%d web entities found' . PHP_EOL,
                 count($web->getWebEntities()));
@@ -66,6 +68,32 @@ class GoogleVisionController extends Controller
                     $entity->getScore());
                 echo("</br>");
             }
+            echo("</br>");
+
+            $response = $imageAnnotator->safeSearchDetection($image);
+            $safe = $response->getSafeSearchAnnotation();
+
+            $adult = $safe->getAdult();
+            $medical = $safe->getMedical();
+            $spoof = $safe->getSpoof();
+            $violence = $safe->getViolence();
+            $racy = $safe->getRacy();
+
+            # names of likelihood from google.cloud.vision.enums
+            $likelihoodName = ['UNKNOWN', 'VERY_UNLIKELY', 'UNLIKELY',
+                'POSSIBLE', 'LIKELY', 'VERY_LIKELY'];
+
+            echo("</br>");
+            printf("Adult: %s" . PHP_EOL, $likelihoodName[$adult]);
+            echo("</br>");
+            printf("Medical: %s" . PHP_EOL, $likelihoodName[$medical]);
+            echo("</br>");
+            printf("Spoof: %s" . PHP_EOL, $likelihoodName[$spoof]);
+            echo("</br>");
+            printf("Violence: %s" . PHP_EOL, $likelihoodName[$violence]);
+            echo("</br>");
+            printf("Racy: %s" . PHP_EOL, $likelihoodName[$racy]);
+            echo("</br>");
 
             $imageAnnotator->close();
         }
