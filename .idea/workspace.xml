@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efca4f5-175b-4b82-bc9e-4929c21d38ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DemandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DemandController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2008_02_11_130528_create_images_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_12_134021_create_quantity_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_02_12_131550_create_demand_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_02_12_131550_create_demand_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/demand/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/demand/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +138,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1X16Da56uiLGGXqPyLNRiUo9GEU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -161,6 +160,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projects\BiasharaWeb\app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -197,7 +201,7 @@
       <workItem from="1584351682142" duration="60000" />
       <workItem from="1584351884193" duration="2039000" />
       <workItem from="1584372969895" duration="157000" />
-      <workItem from="1584440025269" duration="10594000" />
+      <workItem from="1584440025269" duration="14537000" />
     </task>
     <servers />
   </component>
@@ -245,17 +249,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584444620293" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1584453182853">
+    <state x="721" y="335" key="NewPhpClassDialog" timestamp="1584456779937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584453182853" />
+    <state x="721" y="335" key="NewPhpClassDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584456779937" />
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1584457147649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584457147649" />
     <state x="936" y="330" key="run.anything.popup" timestamp="1580309398149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-2560.0.2560.1440/2560.-744.3840.2160@0.0.2560.1400" timestamp="1580309398149" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581513820154">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1584459619334">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="539" y="183" width="840" height="856" key="search.everywhere.popup/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584459619334" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581513820154" />
   </component>
 </project>

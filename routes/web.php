@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/demand', 'DemandController');
+
+Route::get('/offer/createoffer', 'OfferController@createOffer');
+Route::resource('/offer', 'OfferController');
+
