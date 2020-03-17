@@ -40,7 +40,7 @@
                       <div class="card-header">{{ __('Optical Character Recognition | Image annotation') }}</div>
 
 <div class="card-body">
-    <form role="form" method="POST" action="/vision" enctype="multipart/form-data">
+    <form role="form" method="POST" action="/biashara/public/vision" enctype="multipart/form-data">
         @csrf
 
         <div class="form-group row">
