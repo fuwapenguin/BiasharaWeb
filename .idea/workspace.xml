@@ -303,6 +303,12 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
     </include_path>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="560" />
+    <option name="y" value="-15" />
+    <option name="width" value="785" />
+    <option name="height" value="835" />
+  </component>
   <component name="ProjectId" id="1X16Da56uiLGGXqPyLNRiUo9GEU" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
