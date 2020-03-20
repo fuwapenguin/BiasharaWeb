@@ -18,5 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/chat', 'PagesController@chat');
+Route::get('/contacts', 'ContactsController@get');
 
 Route::resource('/demand', 'DemandController');
