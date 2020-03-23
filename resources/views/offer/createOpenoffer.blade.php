@@ -5,7 +5,7 @@
         <form action="{{ route('offer.store') }}" method="POST">
             <div class="row">
                 <div class="col">
-                    <h1>Add offer</h1>
+                    <h1>Add Open offer</h1>
                 </div>
                 <div class="col"></div>
                 <div class="col"></div>
@@ -25,8 +25,6 @@
                     <br>
                     <input name="size" type="text" class="form-control" id="size_id" placeholder="Size">
                     <br>
-                    <input name="quantity" type="text" class="form-control" id="quantity_id" placeholder="Quantity">
-                    <br>
                     <select name="packaging" class="form-control" id="packaging_id" required>
                         @foreach($packaging as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
@@ -38,8 +36,6 @@
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
-                    <br>
-                    <input name="pricing" type="text" class="form-control" id="pricing_id" placeholder="Price">
                     <br>
                     <select name="delivery_terms" class="form-control" id="delivery_terms_id" required>
                         @foreach($deliveries as $id => $display)
@@ -113,7 +109,8 @@
                 </div>
             </div>
             <br>
-            <input type="hidden" id="offer_type_id" name="offer_type" value="1">
+            <br>
+            <input type="hidden" id="offer_type_id" name="offer_type" value="2">
             @csrf
 
             <div class="form-group row">

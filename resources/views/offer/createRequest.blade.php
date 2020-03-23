@@ -5,7 +5,7 @@
         <form action="{{ route('offer.store') }}" method="POST">
             <div class="row">
                 <div class="col">
-                    <h1>Add offer</h1>
+                    <h1>Add request</h1>
                 </div>
                 <div class="col"></div>
                 <div class="col"></div>
@@ -21,36 +21,18 @@
                         @endforeach
                     </select>
                     <br>
-                    <input name="weight" type="text" class="form-control" id="weight_id" placeholder="Weight">
+                    <input name="site" type="text" class="form-control" id="site_id" placeholder="Site">
                     <br>
                     <input name="size" type="text" class="form-control" id="size_id" placeholder="Size">
                     <br>
-                    <input name="quantity" type="text" class="form-control" id="quantity_id" placeholder="Quantity">
+                    <input name="pricing" type="text" class="form-control" id="pricing_id" placeholder="Pricing">
                     <br>
-                    <select name="packaging" class="form-control" id="packaging_id" required>
-                        @foreach($packaging as $id => $display)
-                            <option value="{{ $id }}">{{ $display }}</option>
-                        @endforeach
-                    </select>
+                    <input name="availability" type="text" class="form-control" id="availability_id" placeholder="Availability">
                     <br>
-                    <select name="process" class="form-control" id="process_id" required>
-                        @foreach($process as $id => $display)
-                            <option value="{{ $id }}">{{ $display }}</option>
-                        @endforeach
-                    </select>
-                    <br>
-                    <input name="pricing" type="text" class="form-control" id="pricing_id" placeholder="Price">
-                    <br>
-                    <select name="delivery_terms" class="form-control" id="delivery_terms_id" required>
-                        @foreach($deliveries as $id => $display)
-                            <option value="{{ $id }}">{{ $display }}</option>
-                        @endforeach
-                    </select>
-                    <br>
-                    <input name="fertilizers" type="text" class="form-control" id="fertilizers_id" placeholder="Fertilizers">
-                </div>
-                <div class="col">
-                    <input name="product_type" id="product_type_id" class="form-control" placeholder="Product type">
+                    <div class="form-inline">
+                        <input name="quantity" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="quantity_id" placeholder="Quantity">
+                        <input name="quantity_trial" type="text" style="width: 49%;" class="form-control" id="quantity_trial_id" placeholder="Trial quantity">
+                    </div>
                     <br>
                     <label>Time table</label>
                     <br>
@@ -61,10 +43,30 @@
                     <br>
                     <input name="product_capacity" type="text" class="form-control" id="product_capacity_id" placeholder="Product capacity">
                     <br>
-                    <input name="pesticides" type="text" class="form-control" id="pesticides_id" placeholder="Pesticides">
+                    <div class="form-inline">
+                        <input name="pesticides" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="pesticides_id" placeholder="Pesticides">
+                        <input name="fertilizers" type="text" style="width: 49%;" class="form-control" id="fertilizers_id" placeholder="Fertilizers">
+                    </div>
                     <br>
-                    <input name="sorting" id="sorting_id" type="text" class="form-control"  placeholder="Sorting">
+                    <div class="form-inline">
+                        <select name="delivery_terms" style="width: 49%; margin-right: 7px;" class="form-control" id="delivery_terms_id" required>
+                            @foreach($deliveries as $id => $display)
+                                <option value="{{ $id }}">{{ $display }}</option>
+                            @endforeach
+                        </select>
+                        <select name="payment_terms_category" style="width: 49%;" class="form-control" id="payment_terms_category_id" required>
+                            @foreach($payments as $id => $display)
+                                <option value="{{ $id }}">{{ $display }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <br>
+                    <div class="form-inline">
+                        <textarea name="delivery_details" id="delivery_details_id" style="width: 49%; height: 110px; margin-right: 7px;" class="form-control" placeholder="Delivery details"></textarea>
+                        <textarea name="payment_details" id="payment_details_id" style="width: 49%; height: 110px;" class="form-control" placeholder="Payment details"></textarea>
+                    </div>
+                </div>
+                <div class="col">
                     <div style="padding: 0px 14%">
                         <label style="padding-left: 10px">Season</label>
                         <div class="form-inline checkBoxDiv">
@@ -106,14 +108,32 @@
                     </div>
                 </div>
                 <div class="col">
-                    <textarea name="delivery_details" id="delivery_details_id" style="height: 173px;" class="form-control" placeholder="Delivery details"></textarea>
+                    <select name="purchase_intention" class="form-control" id="purchase_intention_id" required>
+                        @foreach($purchase as $id => $display)
+                            <option value="{{ $id }}">{{ $display }}</option>
+                        @endforeach
+                    </select>
                     <br>
-                    <textarea name="payment_details" id="payment_details_id" style="height: 173px;" class="form-control" placeholder="Payment details"></textarea>
+                    <select name="packaging" class="form-control" id="packaging_id" required>
+                        @foreach($packaging as $id => $display)
+                            <option value="{{ $id }}">{{ $display }}</option>
+                        @endforeach
+                    </select>
                     <br>
+                    <input name="distribution" id="distribution_id" type="text" class="form-control"  placeholder="Distribution">
+                    <br>
+                    <input name="sorting" id="sorting_id" type="text" class="form-control"  placeholder="Sorting">
+                    <br>
+                    <textarea name="certifications" id="certifications_id" style="height: 173px;" class="form-control" placeholder="Certifications"></textarea>
+                    <br>
+                    <textarea name="variety" id="variety_id" style="height: 173px;" class="form-control" placeholder="Variety"></textarea>
+                    <br>
+                    <textarea name="curing" id="curing_id" style="height: 173px;" class="form-control" placeholder="Curing"></textarea>
                 </div>
             </div>
             <br>
-            <input type="hidden" id="offer_type_id" name="offer_type" value="1">
+            <br>
+            <input type="hidden" id="offer_type_id" name="offer_type" value="3">
             @csrf
 
             <div class="form-group row">

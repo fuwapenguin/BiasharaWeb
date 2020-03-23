@@ -23,7 +23,7 @@ class CreateOffersTable extends Migration
             $table->dateTime('offer_updated_at');
             $table->string('offer_site')->nullable();
             $table->string('offer_size');
-            $table->string('offer_pricing');
+            $table->string('offer_pricing')->nullable();
             $table->string('offer_availability')->nullable();
             $table->string('quantity')->nullable();
             $table->string('quantity_trial')->nullable();
@@ -54,6 +54,8 @@ class CreateOffersTable extends Migration
             $table->string('offer_cured')->nullable();
             $table->string('offer_weight')->nullable();
             $table->string('offer_product_type')->nullable();
+            $table->string('offer_type_id');
+            $table->foreign('offer_type_id')->references('offer_type_id')->on('offer_type');
         });
     }
 
