@@ -27,10 +27,10 @@ class OfferController extends Controller
     }
 
     /**
- * Show the form for creating a new resource.
- *
- * @return Factory|View
- */
+     * Show the form for creating a new resource.
+     *
+     * @return Factory|View
+     */
     public function createOffer()
     {
         $deliveries = DB::table('delivery_terms')->get()->pluck('delivery_terms_name',	'delivery_terms_id');
@@ -93,6 +93,16 @@ class OfferController extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @return Factory|View
+     */
+    public function confirmOffer()
+    {
+        return view('offer.confirmOffer');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
      * @return Response
      */
     public function create()
@@ -147,7 +157,7 @@ class OfferController extends Controller
             'offer_type_id' => $request->input('offer_type'),
             'process_id' => $request->input('process')
         ]);
-        return redirect('offer');
+        return redirect('offer.confirmOffer');
     }
 
     /**

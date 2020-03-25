@@ -21,7 +21,15 @@
                         @endforeach
                     </select>
                     <br>
-                    <input name="weight" type="text" class="form-control" id="weight_id" placeholder="Weight">
+                    <div class="form-inline">
+                        <input name="weight" style="width: 60%" type="text" class="form-control" id="weight_id" placeholder="Weight">
+                        <select name="units" style="width: 40%" class="form-control" id="units" required>
+                            <option value="" disabled selected>Choose a unit</option>
+                            <option value="">Pound</option>
+                            <option value="">Kg</option>
+                            <option value="">Ton (Metric)</option>
+                        </select>
+                    </div>
                     <br>
                     <input name="size" type="text" class="form-control" id="size_id" placeholder="Size">
                     <br>

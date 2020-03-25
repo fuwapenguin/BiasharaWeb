@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2efca4f5-175b-4b82-bc9e-4929c21d38ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/seeds/BuyerSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/OfferTypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ProcessSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/offer/createRequest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/offer/confirmOffer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Demand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DemandController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_02_12_132661_create_offers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_02_12_132661_create_offers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_02_12_131550_create_demand_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/demand/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/demand/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/offer/createOffer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offer/createOffer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offer/create_openoffer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_02_12_132550_create_offer_type_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offer/create_request.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offer/createOpenoffer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offer/createOpenoffer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offer/createOpenoffer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +215,9 @@
       <workItem from="1584526594711" duration="3837000" />
       <workItem from="1584609750707" duration="5365000" />
       <workItem from="1584700059332" duration="8608000" />
-      <workItem from="1584955048621" duration="1996000" />
+      <workItem from="1584955048621" duration="3416000" />
+      <workItem from="1585041743181" duration="3182000" />
+      <workItem from="1585127761015" duration="2929000" />
     </task>
     <servers />
   </component>
@@ -266,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="335" key="NewPhpClassDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584456779937" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1584702090217">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1585059629705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1584702090217" />
+    <state x="794" y="444" key="NewPhpFileDialog/-1680.26.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1585059629705" />
     <state x="936" y="330" key="run.anything.popup" timestamp="1580309398149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
