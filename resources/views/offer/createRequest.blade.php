@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="col" xmlns="http://www.w3.org/1999/html">
-        <form action="{{ route('demand.store') }}" method="POST">
+        <form action="{{ route('offer.store') }}" method="POST">
             <div class="row">
                 <div class="col">
-                    <h1>Add offer</h1>
+                    <h1>Add request</h1>
                 </div>
                 <div class="col"></div>
                 <div class="col"></div>
@@ -31,7 +31,7 @@
                     <br>
                     <div class="form-inline">
                         <input name="quantity" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="quantity_id" placeholder="Quantity">
-                        <input name="trial_quantity" type="text" style="width: 49%;" class="form-control" id="trial_quantity_id" placeholder="Trial quantity">
+                        <input name="quantity_trial" type="text" style="width: 49%;" class="form-control" id="quantity_trial_id" placeholder="Trial quantity">
                     </div>
                     <br>
                     <label>Time table</label>
@@ -65,7 +65,7 @@
                         <textarea name="delivery_details" id="delivery_details_id" style="width: 49%; height: 110px; margin-right: 7px;" class="form-control" placeholder="Delivery details"></textarea>
                         <textarea name="payment_details" id="payment_details_id" style="width: 49%; height: 110px;" class="form-control" placeholder="Payment details"></textarea>
                     </div>
-                 </div>
+                </div>
                 <div class="col">
                     <div style="padding: 0px 14%">
                         <label style="padding-left: 10px">Season</label>
@@ -132,7 +132,8 @@
                 </div>
             </div>
             <br>
-
+            <br>
+            <input type="hidden" id="offer_type_id" name="offer_type" value="3">
             @csrf
 
             <div class="form-group row">
