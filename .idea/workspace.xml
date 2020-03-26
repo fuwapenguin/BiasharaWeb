@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< refs/remotes/BiasharaWeb/master
     <list default="true" id="19cf2ee7-cecb-4fe2-8251-78d8403bbf70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2007_01_29_181549_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2007_01_29_181549_create_countries_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2008_02_11_130528_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2008_02_11_130528_create_images_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-=======
     <list default="true" id="2efca4f5-175b-4b82-bc9e-4929c21d38ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
