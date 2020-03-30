@@ -8,7 +8,7 @@
                     <div class="card-header">Biashara chat :)</div>
 
                     <div class="card-body" id="app">
-
+                        <chat-app :user="{{ auth()->user() }}"></chat-app>
                     </div>
                 </div>
             </div>
