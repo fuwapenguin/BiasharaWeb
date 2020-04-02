@@ -21,19 +21,19 @@ class CreateUsersTable extends Migration
             $table->string('middle_name')->default('');
             $table->string('last_name');
             $table->uuid('user_type_code')->default('0');
-            $table->uuid('company_id')->default(Uuid::generate())->default(null);
-            $table->foreign('company_id')->references('company_id')->on('company');
-            $table->uuid('country_id')->default(Uuid::generate());
+            //$table->uuid('company_id')->default(Uuid::generate());
+            //$table->foreign('company_id')->references('company_id')->on('company');
+            $table->uuid('country_id')->nullable();
             $table->foreign('country_id')->references('country_id')->on('countries');
             $table->string('email')->unique();
             $table->string('phone_number')->unique();
-            $table->dateTime('email_verified_at')->default(null);
+            $table->string('email_verified_at')->default('0');
             $table->string('password');
             $table->uuid('image_id')->default(Uuid::generate());
             //$table->foreign('image_id')->references('image_id')->on('images');
             $table->rememberToken();
-            $table->dateTime('created_at');
-            $table->dateTime('updated_at');
+            $table->dateTime('created_at')->useCurrent();
+            $table->dateTime('updated_at')->useCurrent();
 
         });
     }

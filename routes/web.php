@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Auth::routes();
 
@@ -24,4 +24,7 @@ Route::get('/offer/createopenoffer', 'OfferController@createOpenoffer');
 Route::get('/offer/createrequest', 'OfferController@createRequest');
 Route::get('/offer/confirm', 'OfferController@confirmOffer');
 Route::resource('/offer', 'OfferController');
+
+Route::get('/vision', 'GoogleVisionController@displayForm');
+Route::post('/vision', 'GoogleVisionController@showImageResults');
 
