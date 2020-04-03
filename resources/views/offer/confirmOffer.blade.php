@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-6" align="center">
                     <svg height="120" width="50" style="padding-top: 50px">
-                        <image href="{{url('/images/check.png')}}" height="50" width="50"/>
+                        <image href="{{url('/images/tick.svg')}}" height="50px" width="50px"/>
                     </svg>
                     <h3>Congratulation your offer as been placed</h3>
                     <br>

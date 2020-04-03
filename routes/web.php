@@ -10,12 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
+
 Route::get('/', function () {
     return view('welcome');
-});*/
+});
 
 Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -28,3 +29,12 @@ Route::resource('/offer', 'OfferController');
 Route::get('/vision', 'GoogleVisionController@displayForm');
 Route::post('/vision', 'GoogleVisionController@showImageResults');
 
+Route::get('/test', function () {
+    return view('auth.verifyDesign');
+});
+Route::get('/test1', function () {
+    return view('auth.info');
+});
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
