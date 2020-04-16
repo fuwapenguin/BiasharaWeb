@@ -13,10 +13,13 @@ class CreateMediaTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('media');
+
         Schema::create('media', function (Blueprint $table) {
             $table->uuid('media_id');
             $table->primary('media_id');
             $table->string('media_path');
+            $table->string('media_name');
             $table->string('media_type');
             $table->dateTime('media_created_at')->useCurrent();
             $table->dateTime('media_updated_at')->useCurrent();

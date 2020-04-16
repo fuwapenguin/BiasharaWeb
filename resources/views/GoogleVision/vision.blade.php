@@ -82,7 +82,7 @@
 
                 let formData = new FormData($('#uploadImageForm')[0]);
                 let file = $('input[type=file]')[0].files[0];
-                formData.append('file', file, file.name);
+                //formData.append('file', file, file.name);
 
                 $.ajaxSetup({
                     headers: {

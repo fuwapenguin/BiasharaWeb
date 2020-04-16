@@ -23,6 +23,7 @@ Route::get('/offer/createoffer', 'OfferController@createOffer');
 Route::get('/offer/createopenoffer', 'OfferController@createOpenoffer');
 Route::get('/offer/createrequest', 'OfferController@createRequest');
 Route::get('/offer/confirm', 'OfferController@confirmOffer');
+Route::post('/offer/createoffer', 'OfferController@showImageResults');
 Route::resource('/offer', 'OfferController');
 
 Route::get('/vision', 'GoogleVisionController@displayForm');

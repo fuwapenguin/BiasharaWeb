@@ -10,6 +10,10 @@ class Offer extends Model
     protected $table = 'offers';
     public $primaryKey  = 'offer_id';
 
+    protected $fillable = [
+        'offer_id', 'media_id',
+    ];
+
     /**
      * Indicates if the IDs are auto-incrementing.
      *
