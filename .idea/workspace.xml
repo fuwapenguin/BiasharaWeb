@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cf2ee7-cecb-4fe2-8251-78d8403bbf70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/biashara.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/biashara.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/AfricaMap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/SidebarLinks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/SidebarRight.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offer/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +24,29 @@
       <executable path="composer" />
     </execution>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>register</find>
-    </findStrings>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - biashara@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - biashara@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,12 +200,6 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="560" />
-    <option name="y" value="-15" />
-    <option name="width" value="785" />
-    <option name="height" value="835" />
-  </component>
   <component name="ProjectId" id="1X16Da56uiLGGXqPyLNRiUo9GEU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -206,6 +224,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projects\BiasharaWeb\public\images" />
+      <recent name="C:\xampp\htdocs\Projects\BiasharaWeb\resources\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -246,6 +270,14 @@
       <workItem from="1585851775702" duration="4392000" />
       <workItem from="1586165800899" duration="5898000" />
       <workItem from="1586253563606" duration="3910000" />
+      <workItem from="1586336566008" duration="10114000" />
+      <workItem from="1586423689904" duration="1429000" />
+      <workItem from="1586850451813" duration="7730000" />
+      <workItem from="1586939658283" duration="3012000" />
+      <workItem from="1587026044322" duration="7060000" />
+      <workItem from="1587050894269" duration="230000" />
+      <workItem from="1587051529684" duration="2526000" />
+      <workItem from="1587114303986" duration="2085000" />
     </task>
     <servers />
   </component>

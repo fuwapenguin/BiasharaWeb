@@ -1,1 +1,163 @@
-//
+/* Demand page
+------------------------- */
+.checkBoxDiv{
+    align-items: center;
+    margin-bottom: 10px;
+}
+.checkBox{
+    margin: 0px 10px;
+
+}
+
+.checkBoxLable{
+    width: 36%;
+    text-align: start;
+}
+
+.searchform{
+    width: 100%;
+}
+
+.searchButton{
+    width: 5%;
+    float: left;
+    border-radius: .25rem 0rem 0rem .25rem;
+    background-color: white;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 0px 1px 1px;
+}
+.searchButton:hover{
+    width: 5%;
+    float: left;
+    border-radius: .25rem 0rem 0rem .25rem;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 0px 1px 1px;
+}
+
+.searchBar{
+    float: left;
+    display: block;
+    width: 95%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 1px 1px 0px;
+    border-radius: 0rem .25rem .25rem 0rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.dashboardItems{
+    margin-top: 100px;
+}
+.dashboardLinks{
+    color: #5a5a5a;
+}
+.dashboardLinks:hover{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.dashboardLinks:visited{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.container{
+    max-width: 100%;
+}
+.loginInput{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #66b2b7;
+}
+.loginInput:focus {
+    outline-width: 0;
+}
+.loginFromDiv{
+    height: 20%;
+    width: 100%;
+}
+.loginButtonDiv{
+    width: 100%;
+    text-align: end;
+    height: 5%;
+}
+.loginButtons{
+    background-image: linear-gradient(#3fc8be, #47e1ae);
+    width: 100px;
+    font-weight: bold;
+    color: white;
+}
+.loginButtons:hover{
+    background-image: linear-gradient(#4ac0bf, #47cd9a);
+    color: white;
+}
+.forgotPassLink{
+    color: #5a5a5a;
+}
+.loginDivider{
+    width: 100%;
+    height: 20%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #66b2b7;
+}
+.registerDiv{
+    padding-top: 25%;
+    padding-left: 43%;
+    width: 100%;
+    height: 20%;
+}
+.registerLink{
+    color: white;
+}
+.registerLink:visited{
+    color: white;
+    text-decoration: none;
+}
+.registerLink:hover{
+    color: white;
+    text-decoration: none;
+}
+.registerLink:active{
+    color: white;
+    text-decoration: none;
+}
+.sidebarLeft{
+    padding: 0px;
+    background-image: url("../../public/images/SidebarLinks.svg");
+    background-repeat: repeat-y;
+    background-size: 133px 969px;
+    -o-background-size: 133px 969px;
+    -webkit-background-size: 133px 969px;
+    background-size: contain;
+}
+.sidebarRight{
+    padding: 0px;
+    background-image: url("../../public/images/SidebarRight.svg");
+    background-repeat: repeat-y;
+    background-size: 133px 969px;
+    -o-background-size: 133px 969px;
+    -webkit-background-size: 133px 969px;
+    background-position: right;
+
+}
+
