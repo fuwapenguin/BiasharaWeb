@@ -20,3 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/demand', 'DemandController');
+
+Route::get('/company/step1', 'CompanyController@step1')->name('step2');
+
+Route::post('/company/step2', 'CompanyController@storecompany')->name('company');
+
+Route::get('/company/step3', 'CompanyController@step3');
+
+Route::resource('/company', 'CompanyController');
