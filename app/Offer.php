@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Demand extends Model
+class Offer extends Model
 {
     //
-    protected $table = 'demand';
-    public $primaryKey  = 'demand_id';
+    protected $table = 'offers';
+    public $primaryKey  = 'offer_id';
 
     /**
      * Indicates if the IDs are auto-incrementing.

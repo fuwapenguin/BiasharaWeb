@@ -29,8 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('phone_number')->unique();
             $table->string('email_verified_at')->default('0');
             $table->string('password');
-            $table->uuid('image_id')->nullable();
-            $table->foreign('image_id')->references('image_id')->on('images');
+            $table->uuid('image_id')->default(Uuid::generate());
+            //$table->foreign('image_id')->references('image_id')->on('images');
             $table->rememberToken();
             $table->dateTime('created_at')->useCurrent();
             $table->dateTime('updated_at')->useCurrent();

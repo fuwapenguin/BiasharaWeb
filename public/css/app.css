@@ -13,3 +13,61 @@
     width: 36%;
     text-align: start;
 }
+
+.searchform{
+    width: 100%;
+}
+
+.searchButton{
+    width: 5%;
+    float: left;
+    border-radius: .25rem 0rem 0rem .25rem;
+    background-color: white;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 0px 1px 1px;
+}
+.searchButton:hover{
+    width: 5%;
+    float: left;
+    border-radius: .25rem 0rem 0rem .25rem;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 0px 1px 1px;
+}
+
+.searchBar{
+    float: left;
+    display: block;
+    width: 95%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width:  1px 1px 1px 0px;
+    border-radius: 0rem .25rem .25rem 0rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.dashboardItems{
+    margin-top: 100px;
+}
+.dashboardLinks{
+    color: #5a5a5a;
+}
+.dashboardLinks:hover{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.dashboardLinks:visited{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.

@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="col" xmlns="http://www.w3.org/1999/html">
-        <form action="{{ route('demand.store') }}" method="POST">
+        <form action="{{ route('offer.store') }}" method="POST">
             <div class="row">
                 <div class="col">
-                    <h1>Add offer</h1>
+                    <h1>Add request</h1>
                 </div>
                 <div class="col"></div>
                 <div class="col"></div>
@@ -13,42 +13,31 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <input name="product_name" type="text" class="form-control" id="product_name_id" placeholder="Product Name">
-                    <br>
-                    <select name="category" class="form-control" id="category_id" required>
+                    <input name="product_name" type="text" class="form-control form-group" id="product_name_id" placeholder="Product Name">
+                    <select name="category" class="form-control form-group" id="category_id" required>
                         @foreach($categories as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
-                    <br>
-                    <input name="site" type="text" class="form-control" id="site_id" placeholder="Site">
-                    <br>
-                    <input name="size" type="text" class="form-control" id="size_id" placeholder="Size">
-                    <br>
-                    <input name="pricing" type="text" class="form-control" id="pricing_id" placeholder="Pricing">
-                    <br>
-                    <input name="availability" type="text" class="form-control" id="availability_id" placeholder="Availability">
-                    <br>
-                    <div class="form-inline">
+                    <input name="site" type="text" class="form-control form-group" id="site_id" placeholder="Site">
+                    <input name="size" type="text" class="form-control form-group" id="size_id" placeholder="Size">
+                    <input name="pricing" type="text" class="form-control form-group" id="pricing_id" placeholder="Pricing">
+                    <input name="availability" type="text" class="form-control form-group" id="availability_id" placeholder="Availability">
+                    <div class="form-inline form-group">
                         <input name="quantity" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="quantity_id" placeholder="Quantity">
-                        <input name="trial_quantity" type="text" style="width: 49%;" class="form-control" id="trial_quantity_id" placeholder="Trial quantity">
+                        <input name="quantity_trial" type="text" style="width: 49%;" class="form-control" id="quantity_trial_id" placeholder="Trial quantity">
                     </div>
-                    <br>
                     <label>Time table</label>
-                    <br>
-                    <div class="form-inline">
+                    <div class="form-inline form-group">
                         <input name="start_date" id="start_date_id" class="datepicker" style="width: 49% ; margin-right: 7px;" placeholder="Start date">
                         <input name="end_date" id="end_date_id" class="datepicker" style="width: 49%;" placeholder="End date">
                     </div>
-                    <br>
-                    <input name="product_capacity" type="text" class="form-control" id="product_capacity_id" placeholder="Product capacity">
-                    <br>
-                    <div class="form-inline">
+                    <input name="product_capacity" type="text" class="form-control form-group" id="product_capacity_id" placeholder="Product capacity">
+                    <div class="form-inline form-group">
                         <input name="pesticides" type="text" style="width: 49%; margin-right: 7px;" class="form-control" id="pesticides_id" placeholder="Pesticides">
                         <input name="fertilizers" type="text" style="width: 49%;" class="form-control" id="fertilizers_id" placeholder="Fertilizers">
                     </div>
-                    <br>
-                    <div class="form-inline">
+                    <div class="form-inline form-group">
                         <select name="delivery_terms" style="width: 49%; margin-right: 7px;" class="form-control" id="delivery_terms_id" required>
                             @foreach($deliveries as $id => $display)
                                 <option value="{{ $id }}">{{ $display }}</option>
@@ -60,12 +49,11 @@
                             @endforeach
                         </select>
                     </div>
-                    <br>
-                    <div class="form-inline">
+                    <div class="form-inline form-group">
                         <textarea name="delivery_details" id="delivery_details_id" style="width: 49%; height: 110px; margin-right: 7px;" class="form-control" placeholder="Delivery details"></textarea>
                         <textarea name="payment_details" id="payment_details_id" style="width: 49%; height: 110px;" class="form-control" placeholder="Payment details"></textarea>
                     </div>
-                 </div>
+                </div>
                 <div class="col">
                     <div style="padding: 0px 14%">
                         <label style="padding-left: 10px">Season</label>
@@ -108,31 +96,24 @@
                     </div>
                 </div>
                 <div class="col">
-                    <select name="purchase_intention" class="form-control" id="purchase_intention_id" required>
+                    <select name="purchase_intention" class="form-control form-group" id="purchase_intention_id" required>
                         @foreach($purchase as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
-                    <br>
-                    <select name="packaging" class="form-control" id="packaging_id" required>
+                    <select name="packaging" class="form-control form-group" id="packaging_id" required>
                         @foreach($packaging as $id => $display)
                             <option value="{{ $id }}">{{ $display }}</option>
                         @endforeach
                     </select>
-                    <br>
-                    <input name="distribution" id="distribution_id" type="text" class="form-control"  placeholder="Distribution">
-                    <br>
-                    <input name="sorting" id="sorting_id" type="text" class="form-control"  placeholder="Sorting">
-                    <br>
-                    <textarea name="certifications" id="certifications_id" style="height: 173px;" class="form-control" placeholder="Certifications"></textarea>
-                    <br>
-                    <textarea name="variety" id="variety_id" style="height: 173px;" class="form-control" placeholder="Variety"></textarea>
-                    <br>
-                    <textarea name="curing" id="curing_id" style="height: 173px;" class="form-control" placeholder="Curing"></textarea>
+                    <input name="distribution" id="distribution_id" type="text" class="form-control form-group"  placeholder="Distribution">
+                    <input name="sorting" id="sorting_id" type="text" class="form-control form-group"  placeholder="Sorting">
+                    <textarea name="certifications" id="certifications_id" style="height: 160px;" class="form-control form-group" placeholder="Certifications"></textarea>
+                    <textarea name="variety" id="variety_id" style="height: 160px;" class="form-control form-group" placeholder="Variety"></textarea>
+                    <textarea name="curing" id="curing_id" style="height: 160px;" class="form-control form-group" placeholder="Curing"></textarea>
                 </div>
             </div>
-            <br>
-
+            <input type="hidden" id="offer_type_id" name="offer_type" value="3">
             @csrf
 
             <div class="form-group row">
