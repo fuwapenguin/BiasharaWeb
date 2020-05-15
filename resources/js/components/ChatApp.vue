@@ -1,13 +1,13 @@
 <template>
     <div class="chat-app">
         <Conversation :contact="selectedContact" :messages="messages"/>
-        <ContactsList :contacts="contacts"/>
+        <ContactsList :contacts="contacts" @selected="startConversationWith"/>
     </div>
 </template>
 
 <script>
-    import Conversation from './Conversation';
-    import ContactsList from './ContactsList';
+    import Conversation from './Conversation.vue';
+    import ContactsList from './ContactsList.vue';
 
     export default {
         props: {
@@ -23,14 +23,30 @@
                 contacts: []
             };
         },
-        mounted() {
-            console.log(this.user);
-            axios.get('/contacts')
-                .then((response) => {
-                    console.log(response.data);
-                    this.contacts = response.data;
-            });
+         mounted() {
+             axios.get('/contacts')
+                 .then((response) => {
+                     console.log(response.data);
+                     this.contacts = response.data;
+                 });
+         },
+            methods: {
+                startConversationWith(contact){
+                    axios.get(`/conversation/${contact.user_id}`)
+                    .then((response) => {
+                        this.messages = response.data;
+                        this.selectedContact = contact;
+
+                    })
+                }
+
         },
         components: {Conversation, ContactsList}
     }
 </script>
+
+<style lang="scss" module>
+    .chat-app {
+        display: flex;
+    }
+</style>

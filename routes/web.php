@@ -22,6 +22,8 @@ Route::get('/verify', 'Auth\VerificationController@verify');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/chat', 'PagesController@chat');
 Route::get('/contacts', 'ContactsController@get');
+Route::get('/conversation/{id}', 'ContactsController@getMessagesFor');
 
 
 Route::resource('/demand', 'DemandController');
+Route::resource('api/tests', 'RestAPIController');

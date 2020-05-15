@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cf2ee7-cecb-4fe2-8251-78d8403bbf70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ContactsList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Conversation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RestAPIController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/RestApiTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_11_080505_create_rest_api_tests_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/MessageComposer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/MessagesFeed.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ChatApp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ChatApp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ContactsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ContactsList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Conversation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Conversation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Chatsystem/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Chatsystem/chat.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -151,6 +158,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\mitch\AppData\Local\JetBrains\Toolbox\apps\PhpStorm\ch-0\193.5662.63\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager">
@@ -194,7 +202,24 @@
       <workItem from="1584712732276" duration="780000" />
       <workItem from="1584957004281" duration="484000" />
       <workItem from="1585145367141" duration="7037000" />
-      <workItem from="1585558690618" duration="3955000" />
+      <workItem from="1585558690618" duration="4560000" />
+      <workItem from="1585646245328" duration="4554000" />
+      <workItem from="1585738271182" duration="2396000" />
+      <workItem from="1585907401971" duration="1809000" />
+      <workItem from="1586164837278" duration="5642000" />
+      <workItem from="1586247892236" duration="4932000" />
+      <workItem from="1586336294846" duration="8996000" />
+      <workItem from="1586423277821" duration="4148000" />
+      <workItem from="1586511012710" duration="4908000" />
+      <workItem from="1586852482482" duration="6456000" />
+      <workItem from="1586941068300" duration="1203000" />
+      <workItem from="1587029377098" duration="7951000" />
+      <workItem from="1587115030529" duration="1248000" />
+      <workItem from="1588061600989" duration="2918000" />
+      <workItem from="1588147727461" duration="3169000" />
+      <workItem from="1588926791188" duration="648000" />
+      <workItem from="1588930066982" duration="2827000" />
+      <workItem from="1589180094643" duration="7574000" />
     </task>
     <servers />
   </component>
@@ -249,9 +274,14 @@
     <state width="916" height="284" key="GridCell.Tab.0.right/-1920.12.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1584451719328" />
     <state width="916" height="284" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584467374686" />
     <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1440/2560.-744.3840.2160@0.0.2560.1400" timestamp="1580245351205" />
-    <state x="936" y="330" key="run.anything.popup" timestamp="1580309398149">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="0" y="167" key="SettingsEditor" timestamp="1586351475680">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="0" y="167" key="SettingsEditor/-1920.12.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1586351475680" />
+    <state x="702" y="245" key="run.anything.popup" timestamp="1586251886824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="245" key="run.anything.popup/-1920.12.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1586251886824" />
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-2560.0.2560.1440/2560.-744.3840.2160@0.0.2560.1400" timestamp="1580309398149" />
     <state x="539" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1585231082342">
       <screen x="0" y="0" width="1920" height="1040" />
