@@ -23,6 +23,7 @@ class OfferController extends Controller
      *
      * @return Factory|View
      */
+
     public function index()
     {
         $offer = DB::table('offers')->get();
@@ -30,6 +31,11 @@ class OfferController extends Controller
             ->with('offer', $offer);
     }
 
+    public function offerList()
+    {
+        $offer = DB::table('offers')->get();
+        return view('offer.offerList',['offer' => $offer]);
+    }
     /**
      * Show the form for creating a new resource.
      *
